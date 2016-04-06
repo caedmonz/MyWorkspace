@@ -8,6 +8,7 @@ import java.io.IOException;
  * Created by Administrator on 2016/4/6.
  */
 public class FileRowsCountTest {
+
     @Test
     public void testRowCount() throws IOException {
         String fileName = "D:\\编程开发\\IDE\\IntelliJ IDEA\\workspace\\DevTask\\src\\FileAnalysis.java";

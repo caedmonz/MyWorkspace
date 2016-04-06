@@ -119,7 +119,7 @@ public class ExchangeRates {
     private List<List<Object>> get30DaysRates() throws IOException {
         List<List<Object>> rates = new ArrayList<List<Object>>();
         for (int i = 1; i < 10; i++) {
-            Document doc = Jsoup.connect(indexURL + "/index" + i + ".html").timeout(10000).get();
+            Document doc = Jsoup.connect(indexURL + "/index" + i + ".html").get();
             Elements links = doc.select("a[href]"); //带有href属性的a元素
             for (Element link : links) {
                 String hrefLink = link.attr("href");
